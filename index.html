@@ -417,26 +417,100 @@ body{min-height:100vh;display:flex;align-items:center;justify-content:center;bac
 const OWNER_ID = '1293253458727800833';
 
 const BADGE_DEFS = [
-  { id:'verified',  file:'verified.png',  label:'Verified',   desc:'Verified member' },
-  { id:'developer', file:'developer.png', label:'Developer',  desc:'Website developer' },
-  { id:'dev2',      file:'dev2.png',      label:'Dev II',     desc:'Senior developer' },
-  { id:'moderator', file:'mod.png',       label:'Moderator',  desc:'Community mod' },
-  { id:'booster',   file:'booster.png',   label:'Booster',    desc:'Server booster' },
-  { id:'Bug Finder',  file:'bugfinder.png',      label:'Bug Finder',   desc:'Found A Bug' },
+  {
+    id: "verified",
+    file: "verified.png",
+    label: "Verified",
+    desc: "Verified member"
+  },
+  {
+    id: "developer",
+    file: "developer.png",
+    label: "Developer",
+    desc: "Website developer"
+  },
+  {
+    id: "dev2",
+    file: "dev2.png",
+    label: "Dev II",
+    desc: "Senior developer"
+  },
+  {
+    id: "moderator",
+    file: "mod.png",
+    label: "Moderator",
+    desc: "Community moderator"
+  },
+  {
+    id: "booster",
+    file: "booster.png",
+    label: "Booster",
+    desc: "Server booster"
+  },
+  {
+    id: "bugfinder",
+    file: "bugfinder.png",
+    label: "Bug Finder",
+    desc: "Found a bug"
+  },
+  {
+    id: "owner",
+    file: "owner.png",
+    label: "Owner",
+    desc: "Website owner"
+  },
+  {
+    id: "og",
+    file: "og.png",
+    label: "OG",
+    desc: "Original member"
+  },
+  {
+    id: "vip",
+    file: "vip.png",
+    label: "VIP",
+    desc: "Very Important Person"
+  }
 ];
 
 const BADGE_TOOLTIPS = {
-  verified:  { name:'Verified',   desc:'A verified community member' },
-  developer: { name:'Developer',  desc:'Builds and maintains this website' },
-  dev2:      { name:'Dev II',     desc:'Senior developer of this website' },
-  moderator: { name:'Moderator',  desc:'Trusted moderator with elevated permissions' },
-  booster:   { name:'Booster',    desc:'Boosting the Discord server — thank you!' },
-  Bug Finder:  { name:'Bug Finder',   desc:'Achieved Immortal — legendary rank' },
-  owner:     { name:'Owner',      desc:'The owner and creator of this website' },
-  og:        { name:'OG',         desc:'One of the earliest members' },
-  vip:       { name:'VIP',        desc:'Very Important Person — exclusive access' },
+  verified: {
+    name: "Verified",
+    desc: "A verified community member"
+  },
+  developer: {
+    name: "Developer",
+    desc: "Builds and maintains this website"
+  },
+  dev2: {
+    name: "Dev II",
+    desc: "Senior developer of this website"
+  },
+  moderator: {
+    name: "Moderator",
+    desc: "Trusted moderator with elevated permissions"
+  },
+  booster: {
+    name: "Booster",
+    desc: "Boosting the Discord server — thank you!"
+  },
+  bugfinder: {
+    name: "Bug Finder",
+    desc: "Found a bug"
+  },
+  owner: {
+    name: "Owner",
+    desc: "The owner and creator of this website"
+  },
+  og: {
+    name: "OG",
+    desc: "One of the earliest members"
+  },
+  vip: {
+    name: "VIP",
+    desc: "Very Important Person — exclusive access"
+  }
 };
-
 /* Particles */
 const canvas=document.getElementById('particles');const ctx=canvas.getContext('2d');let W,H,pts=[];
 function resize(){W=canvas.width=innerWidth;H=canvas.height=innerHeight;}resize();window.addEventListener('resize',resize);
